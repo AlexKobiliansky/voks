@@ -1,0 +1,85 @@
+.main-head
+  padding: 22px 0 28px
+  .btn
+    float: right
+    margin-left: 40px
+    margin-top: 9px
+  .top-phone
+    float: right
+    font-weight: 700
+    margin-top: 17px
+    +mt(.2s)
+    &:hover
+      color: $accent
+  .logo
+    margin-right: 65px
+
+.main-mnu
+  display: inline-block
+  li
+    display: inline-block
+    margin-right: 24px
+    +mt(.2s)
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      height: 1px
+      width: 100%
+      background-color: #e3c1c2
+      left: 0
+      bottom: 2px
+      +mt(.2s)
+      opacity: 0
+    &:hover
+      color: $accent
+      &:after
+        opacity: 1
+    &:last-child
+      margin-right: 0
+
+.hamburger
+  display: none
+  padding-top: 5px
+  padding-bottom: 5px
+  position: relative
+  top: 11px
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before,
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: $accent
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-color: #e3c1c2
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.51)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: $accent
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 20px
+  color: #fff
+  letter-spacing: 2px
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #000
+//mmenu customization end
+

@@ -54,13 +54,25 @@ ul
   list-style-type: none
   padding: 0
   margin-bottom: 0
-
-//pixel-glass custom
-//html
-//  background-repeat: no-repeat
-//  background-position: 50% 0
-//  background-image: url('../img/layout/test.png')
-
 // ======= END TEMPLATE STYLES =======
 
+.btn
+  display: inline-block
+  text-align: center
+  text-transform: uppercase
+  font-weight: 700
+  +mt(.3s)
+  border: 1px solid transparent
+  line-height: 1
+  white-space: nowrap
 
+.btn-red
+  background-color: $accent
+  color: #ffffff
+  font-size: 14px
+  padding: 10px 12px
+  border-width: 2px
+  &:hover, &:active, &:focus
+    border-color: $accent
+    color: $accent
+    background-color: #fff

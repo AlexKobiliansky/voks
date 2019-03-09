@@ -5,15 +5,39 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .main-mnu
+    display: none
+
+  .hamburger
+    display: inline-block
+
+  .main-head
+    .logo
+      margin-right: 30px
 
 // ≥992px
 +media-breakpoint-down(md)
 
 // ≥768px
 +media-breakpoint-down(sm)
+  .main-head
+    .top-phone
+      margin-top: 0
+      margin-right: 14px
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .main-head
+    position: relative
+    .top-phone
+      float: none
+      position: absolute
+      left: 15px
+      bottom: -10px
+
+  .hamburger
+    float: right
 
 
 /*==========  Mobile First  ==========*/
