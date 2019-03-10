@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 
     /**
      * mobile-mnu customization
@@ -81,6 +81,38 @@ $(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $( ".any-content" ).tabs();
+
+
+
+
+    $('.objects-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        items: 1,
+        margin: 15,
+        dots: false,
+        autoHeight: false,
+        navText: ["",""],
+    });
+
+
+
     $('.intro-slider').owlCarousel({
         loop:true,
         nav:false,
@@ -106,35 +138,22 @@ $(function() {
         }
     });
 
-    $('.any-slider').owlCarousel({
-        loop:true,
-        nav: true,
-        items: 1,
-        margin: 15,
-        dots: false,
-        autoHeight: true,
-        navText: ["",""]
+    $('.any-slider').each(function(){
+        $(this).owlCarousel({
+            loop:true,
+            nav: true,
+            items: 1,
+            margin: 15,
+            dots: false,
+            autoHeight: true,
+            navText: ["",""]
+        });
     });
 
-    $('.objects-slider').owlCarousel({
-        loop:true,
-        nav: true,
-        items: 1,
-        margin: 15,
-        dots: false,
-        autoHeight: false,
-        navText: ["",""],
-        animateIn: "fadeIn",
-        animateOut: "fadeOut",
-    });
+
 
     $('.any-slider').photoswipe();
     $('.object-item-img').photoswipe();
-
-
-
-
-    $( ".any-content" ).tabs();
 
 
 
@@ -142,6 +161,13 @@ $(function() {
         if ($(window).width()<480) {
             $('.any-control-desc').matchHeight();
         }
+
+        if ($(window).width()>=480) {
+            $('.project-item-title').height('auto').equalHeights();
+            $('.project-item-desc').height('auto').equalHeights();
+        }
+
+
 
         $('.nav-item-title').matchHeight();
         $('.intro-slide').matchHeight();
