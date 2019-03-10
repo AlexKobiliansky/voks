@@ -1,0 +1,57 @@
+.s-insurance
+  margin-top: 170px
+
+.ins-wrap
+  display: flex
+  margin-top: 70px
+  align-items: center
+
+.ins-item
+  width: 50%
+  position: relative
+  +bg-cover
+  &-title
+    font-size: 24px
+    font-weight: 700
+    text-transform: uppercase
+    margin-bottom: 15px
+  &-desc
+    p
+      margin-bottom: 5px
+  &-wrap
+    position: relative
+    z-index: 2
+  .btn-more
+    margin-top: 35px
+    font-size: 16px
+    font-weight: 800
+    text-transform: none
+    border-color: $accent
+    padding: 10px 13px 10px 17px
+    .svg
+      +mt(.3s)
+      fill: $accent
+      position: relative
+      width: 30px
+      height: auto
+      margin-left: 7px
+    &:hover
+      background-color: $accent
+      color: #fff
+      .svg
+        fill: #fff
+  &.dark-item
+    padding-left: 22%
+    padding-top: 70px
+    padding-right: 40px
+    padding-bottom: 55px
+    color: #fff
+    &:after
+      +overlay
+      background-color: rgba(#000, .7)
+  &.light-item
+    padding-left: 60px
+    padding-top: 100px
+    padding-right: 22%
+    padding-bottom: 65px
+    box-shadow: 0 10px 35px 5px rgba(#000, .15)

@@ -5,6 +5,11 @@
 
 @media screen and (max-width: 1600px)
 
+  .ins-item.dark-item
+    padding-left: 15%
+  .ins-item.light-item
+    padding-right: 15%
+
   .s-intro
     .contact-form
       right: 60px
@@ -22,6 +27,11 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+  .ins-item.dark-item
+    padding-left: 50px
+  .ins-item.light-item
+    padding-right: 50px
+
   .s-intro
     .contact-form
       display: none
@@ -41,6 +51,9 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .ins-item.dark-item
+    height: 100%
 
   .s-any
     .section-title
@@ -83,6 +96,32 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .section-title
+    padding-left: 0
+    text-align: center
+
+  .ins-wrap
+    margin-top: 40px
+
+  .s-insurance
+    margin-top: 110px
+
+  .ins-wrap
+    flex-wrap: wrap
+
+  .ins-item
+    width: 100%
+    &.dark-item
+      padding-top: 70px
+      padding-left: 50px
+      padding-right: 50px
+      padding-bottom: 60px
+    &.light-item
+      padding-top: 70px
+      padding-left: 50px
+      padding-right: 50px
+      padding-bottom: 60px
+
   .any-slider
     .owl-nav
       right: 0
@@ -111,6 +150,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .ins-item
+    &-title
+      font-size: 18px
+    &.dark-item, &.light-item
+      padding-left: 15px
+      padding-right: 15px
+      padding-top: 50px
+      padding-bottom: 50px
 
   .s-any
     margin-top: 100px
