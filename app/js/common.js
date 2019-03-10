@@ -111,6 +111,23 @@ $(document).ready(function() {
         navText: ["",""],
     });
 
+    $('.changes-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        items: 1,
+        margin: 15,
+        autoHeight: false,
+        navText: ["",""],
+        responsive: {
+            0: {
+                dots: true
+            },
+            480: {
+                dots:false
+            }
+        }
+    });
+
 
 
     $('.intro-slider').owlCarousel({
@@ -154,6 +171,7 @@ $(document).ready(function() {
 
     $('.any-slider').photoswipe();
     $('.object-item-img').photoswipe();
+    $('.change-item-img').photoswipe();
 
 
 

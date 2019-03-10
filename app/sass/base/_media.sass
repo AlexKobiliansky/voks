@@ -71,6 +71,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .changes-slider
+    .owl-nav
+      left: 28px
+      bottom: -28px
+      button.owl-prev, button.owl-next
+        width: 40px
+        height: 40px
+
   .request-container
     margin: 0
 
@@ -206,6 +214,34 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-changes
+    height: auto
+
+  .changes-slider
+    top: 0
+    margin-top: 40px
+    .owl-nav
+      display: none
+    .owl-dots
+      width: 100%
+      text-align: center
+      button.owl-dot
+        display: inline-block
+        width: 10px
+        height: 10px
+        margin: 0 5px
+        border-radius: 40%
+        background-color: #fff
+        &.active
+          background-color: $accent
+
+
+  .change-item
+    flex-wrap: wrap
+    &-half
+      width: 100%
+      margin-bottom: 30px
 
   .s-projects
     font-size: 16px
