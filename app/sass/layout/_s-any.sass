@@ -1,0 +1,77 @@
+.s-any
+  margin-top: 150px
+  .section-title
+    margin-bottom: 50px
+    padding-left: 65px
+
+.any-tabs-controls
+  li
+    display: block
+    width: 100%
+    a
+      display: inline-block
+      width: 100%
+      background-color: #fff
+      padding: 18px 35px 25px 35px
+      margin-bottom: 15px
+      box-shadow: 8px 8px 25px 5px rgba(#000, .2)
+      position: relative
+      height: 154px
+      color: #000000
+      +mt(.3s)
+      &:after
+        content: ''
+        position: absolute
+        border: 77px solid transparent
+        border-left: 24px solid $accent
+        right: -101px
+        top: 0
+        +mt(.3s)
+        opacity: 0
+    .any-control-img
+      display: block
+      fill: $accent
+      height: auto
+      margin-bottom: 7px
+      +mt(.3s)
+      .svg
+        height: 47px
+        width: auto
+    .any-control-desc
+      font-size: 20px
+      font-weight: 700
+      line-height: 1.2
+    &:hover, &.ui-tabs-active
+      a
+        color: #ffffff
+        background-color: $accent
+        .any-control-img
+          fill: #fff
+        &:after
+          opacity: 1
+
+.any-tab
+  padding: 0 85px
+
+.any-slider
+  margin-bottom: 40px
+  position: relative
+  .owl-nav
+    position: absolute
+    right: -85px
+    bottom: 40px
+
+.any-slide
+  background-color: #d8d8d8
+
+.any-content
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    top: 35px
+    left: 55px
+    width: calc(100% - 55px)
+    height: 100%
+    background-color: #f0f0f0
+

@@ -41,6 +41,34 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-any
+    .section-title
+      padding-left: 0
+      text-align: center
+
+  .section-title
+    h2
+      font-size: 28px
+
+  .any-tabs-controls
+    display: flex
+    margin-bottom: 40px
+    flex-wrap: wrap
+    justify-content: space-around
+    li
+      width: 45%
+      a
+        margin-bottom: 30px
+        height: 130px
+        &:after
+          display: none
+      .any-control-desc
+        font-size: 16px
+      .any-control-img
+        .svg
+          height: 35px
+
   .intro-slider-nav
     left: calc((100vw - 768px)/2 + 15px)
 
@@ -54,6 +82,18 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .any-slider
+    .owl-nav
+      right: 0
+      bottom: 0
+
+  .any-content:before
+    left: 0
+    width: 100%
+
+  .any-tab
+    padding: 0 30px
 
   .intro-slider
     box-shadow: 0 46px #dedede
@@ -71,6 +111,31 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-any
+    margin-top: 100px
+
+  .section-title
+    h2
+      font-size: 24px
+
+  .owl-carousel
+    .owl-nav
+      button.owl-prev, button.owl-next
+        width: 34px
+        height: 34px
+
+  .any-tab
+    padding: 0 15px
+
+  .any-tabs-controls
+    li
+      a
+        padding: 15px
+        height: 150px
+      .any-control-desc
+        font-size: 14px
+        line-height: 1
 
   .s-intro
     margin-top: 60px

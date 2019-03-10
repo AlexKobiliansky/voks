@@ -94,19 +94,40 @@ $(function() {
             0: {
                 dots: true,
                 margin: 15,
-                mouseDrag: true
+                mouseDrag: true,
+                nav: false
             },
             768: {
                 dots: false,
                 margin: 0,
-                mouseDrag: false
+                mouseDrag: false,
+                nav: false
             }
         }
     });
 
-    function heightses() {
-        if ($(window).width()>480) {
+    $('.any-slider').owlCarousel({
+        loop:true,
+        nav: true,
+        items: 1,
+        margin: 15,
+        dots: false,
+        autoHeight: true,
+        navText: ["",""]
+    });
 
+    $('.any-slider').photoswipe();
+
+
+
+
+    $( ".any-content" ).tabs();
+
+
+
+    function heightses() {
+        if ($(window).width()<480) {
+            $('.any-control-desc').matchHeight();
         }
 
         $('.nav-item-title').matchHeight();
@@ -122,7 +143,6 @@ $(function() {
     /**
      * FORMS
      */
-
     var uPhone = $('.user-phone');
     uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
 
@@ -153,4 +173,6 @@ $(function() {
     /**
      * FORMS end
      */
+
+
 });
