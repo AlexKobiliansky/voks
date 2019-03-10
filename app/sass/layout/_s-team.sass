@@ -1,0 +1,46 @@
+.s-team
+  margin-top: 80px
+
+.team-slider
+  margin-top: 40px
+  position: relative
+  .owl-stage-outer
+    padding: 20px 0
+  .owl-dots
+    width: 100%
+    text-align: center
+    button.owl-dot
+      width: 10px
+      height: 10px
+      margin: 0 8px
+      background-color: #cdcdcd
+      border-radius: 50%
+      &.active
+        background-color: $accent
+  .owl-nav
+    display: none
+
+  
+.team-item
+  background-color: #fff
+  box-shadow: 5px 5px 35px 1px rgba(#000,.25)
+  padding-bottom: 18px
+  &-img
+    height: 368px
+    +bg-cover
+    width: calc(100% - 25px)
+    position: relative
+    top: -25px
+    left: 25px
+  &-content
+    padding: 0 25px
+    position: relative
+    top: -5px
+  &-surname
+    font-weight: 800
+    text-transform: uppercase
+    font-size: 20px
+  &-name
+    font-weight: 800
+    font-size: 20px
+    margin-bottom: 7px
