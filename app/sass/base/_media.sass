@@ -27,6 +27,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .objects-slider
+    .owl-nav
+      left: 0
+      top: 279px
+      button.owl-prev, button.owl-next
+        width: 40px
+        height: 40px
+
   .ins-item.dark-item
     padding-left: 50px
   .ins-item.light-item
@@ -51,6 +60,22 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .objects-slider
+    .owl-nav
+      left: 4px
+      top: 448px
+      button.owl-prev, button.owl-next
+        width: 66px
+        height: 66px
+
+  .object-item
+    flex-wrap: wrap
+    &-img
+      margin-bottom: 30px
+      width: 100%
+    &-desc
+      padding-left: 0
 
   .ins-item.dark-item
     height: 100%
@@ -95,6 +120,10 @@
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .objects-slider
+    .owl-nav
+      top: 4px
 
   .section-title
     padding-left: 0
@@ -150,6 +179,25 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-objects
+    margin-top: 60px
+
+  .char-row
+    font-size: 16px
+
+  .object-jobs
+    max-width: 100%
+    margin-bottom: 40px
+
+  .video-link
+    float: none
+    right: 0
+    top: 0
+    margin-left: auto
+    margin-right: auto
+    display: block
+
 
   .ins-item
     &-title

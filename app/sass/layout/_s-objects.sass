@@ -1,0 +1,101 @@
+.s-objects
+  margin-top: 100px
+
+.objects-slider
+  margin-top: 50px
+  .owl-nav
+    position: absolute
+    top: 365px
+    left: 60px
+
+.object-item
+  display: flex
+  &-img
+    width: 55%
+  &-desc
+    padding-top: 10px
+    padding-left: 50px
+
+
+.char-row
+  display: table
+  width: 100%
+  font-size: 20px
+  margin-bottom: 10px
+  .char-left
+    display: table-cell
+    width: 115px
+  .char-right
+    display: table-cell
+    font-weight: 700
+
+.object-jobs
+  margin-top: 30px
+  font-weight: 700
+  color: $accent
+  font-size: 20px
+  display: inline-block
+  max-width: 313px
+  li
+    color: $text
+    padding-left: 18px
+    position: relative
+    font-size: 16px
+    font-weight: normal
+    margin-bottom: 10px
+    line-height: 1.2
+    &:first-child
+      margin-top: 12px
+    &:before
+      content: ''
+      position: absolute
+      width: 5px
+      height: 5px
+      background-color: $accent
+      left: 4px
+      top: 9px
+      border-radius: 50%
+
+.video-link
+  display: inline-block
+  max-width: 180px
+  float: right
+  position: relative
+  top: 30px
+  right: 30px
+  text-align: center
+  &:hover
+    .btn-play
+      &:before
+        background-color: rgba(#000, .3)
+      &:after
+        border-left-color: $accent
+    .link-text
+      text-decoration: none
+
+
+.btn-play
+  width: 168px
+  height: 168px
+  //display: block
+  display: inline-block
+  +bg-cover
+  position: relative
+  border-radius: 50%
+  &:before
+    +overlay
+    background-color: rgba(#000, .7)
+    border-radius: 50%
+    +mt(.3s)
+  &:after
+    content: ''
+    position: absolute
+    border: 35px solid transparent
+    border-left: 47px solid #fff
+    left: 69px
+    top: 47px
+    z-index: 2
+    +mt(.3s)
+.link-text
+  display: inline-block
+  text-decoration: underline
