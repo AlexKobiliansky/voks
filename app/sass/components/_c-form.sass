@@ -1,0 +1,37 @@
+.contact-form
+  background-color: #fff
+  text-align: center
+  box-shadow: 5px 5px 25px 5px rgba(#000, .2)
+  h3
+    font-size: 30px
+    text-transform: uppercase
+  p
+    line-height: 1.2
+  label
+    display: block
+    &.has-error
+      input
+        border-color: red
+        color: red
+        &::placeholder
+          color: red
+  input
+    width: 100%
+    line-height: 1
+    font-weight: 700
+    padding: 8px 10px
+    border: none
+    border-bottom: 1px solid #cbcbcb
+    &::placeholder
+      color: #949393
+      text-transform: uppercase
+    &:focus
+      color: #000
+      &::placeholder
+        color: #000
+  .btn
+    margin-top: 35px
+    font-size: 18px
+  .help-block
+    display: none
+

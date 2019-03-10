@@ -1,0 +1,107 @@
+.s-intro
+  position: relative
+  .contact-form
+    position: absolute
+    right: 200px
+    bottom: -46px
+    z-index: 100
+    width: 420px
+    padding: 50px 50px 60px
+    .btn
+      width: 100%
+      padding: 20px
+
+.intro-slider-wrap
+  width: 1600px
+  position: relative
+  left: calc((100vw - 1600px)/2)
+
+.intro-slider
+  box-shadow: 46px 46px #dedede
+  &:before
+    content: ''
+    position: absolute
+    width: 225px
+    height: 6px
+    background-color: $accent
+    left: -70px
+    top: 128px
+    z-index: 100
+  .owl-dots
+    position: absolute
+    bottom: 40px
+    width: 100%
+    text-align: center
+    button.owl-dot
+      width: 10px
+      height: 10px
+      background-color: #fff
+      margin: 5px
+      border-radius: 50%
+      &.active
+        background-color: $accent
+
+.intro-slide
+  color: #fff
+  padding: 90px 0 280px
+  +bg-cover
+  position: relative
+  &:after
+    +overlay
+    background-color: #000
+    opacity: .7
+  .container
+    position: relative
+    z-index: 2
+  h1
+    font-weight: 900
+    font-size: 40px
+    text-transform: uppercase
+    margin-bottom: 20px
+    position: relative
+  h2
+    color: $accent
+    font-weight: 700
+    font-size: 40px
+    margin-bottom: 25px
+
+  h3
+    font-size: 30px
+    font-weight: normal
+    margin-bottom: 60px
+
+.intro-slider-nav
+  position: absolute
+  bottom: 70px
+  left: 212px
+  z-index: 100
+  .nav-item
+    display: inline-block
+    width: 225px
+    background-color: transparent
+    +mt(.3s)
+    border: 1px solid #fff
+    margin-right: 17px
+    padding: 20px 10px 15px 25px
+    cursor: pointer
+    vertical-align: top
+    &:last-child
+      margin-right: 0
+    &-img
+      fill: $accent
+      +mt(.3s)
+      margin-bottom: 15px
+      .svg
+        height: 41px
+        width: auto
+    &-title
+      text-transform: uppercase
+      font-weight: 700
+      color: #fff
+    &:hover, &.active
+      border-color: $accent
+      background-color: $accent
+      .nav-item-img
+        fill: #fff
+
+

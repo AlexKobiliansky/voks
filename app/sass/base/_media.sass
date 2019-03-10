@@ -3,8 +3,32 @@
 
 /*==========  Desktop First  ==========*/
 
+@media screen and (max-width: 1600px)
+
+  .s-intro
+    .contact-form
+      right: 60px
+
+  .intro-slider-nav
+    left: 15px
+
+  .intro-slider
+    &:before
+      display: none
+
+  .intro-slider-wrap
+    width: 100%
+    left: 0
+
 // ≥1200px
 +media-breakpoint-down(lg)
+  .s-intro
+    .contact-form
+      display: none
+
+  .intro-slider-nav
+    left: calc((100vw - 992px)/2 + 15px)
+
   .main-mnu
     display: none
 
@@ -17,9 +41,29 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+  .intro-slider-nav
+    left: calc((100vw - 768px)/2 + 15px)
+
+  .s-intro
+    h1
+      font-size: 34px
+    h2
+      font-size: 30px
+    h3
+      font-size: 26px
 
 // ≥768px
 +media-breakpoint-down(sm)
+
+  .intro-slider
+    box-shadow: 0 46px #dedede
+
+  .intro-slide
+    padding-bottom: 140px
+
+  .intro-slider-nav
+    display: none
+
   .main-head
     .top-phone
       margin-top: 0
@@ -27,6 +71,15 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-intro
+    margin-top: 60px
+    h1
+      font-size: 22px
+    h2
+      font-size: 22px
+    h3
+      font-size: 18px
 
   .main-head
     position: relative
