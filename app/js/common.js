@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
     /**
      * mobile-mnu customization
      */
@@ -218,7 +220,7 @@ $(document).ready(function() {
             $('.team-item-post').height('auto').equalHeights();
         }
 
-        $('.key-control').height('auto').equalHeights();
+        $('.key-control-desc').height('auto').equalHeights();
 
 
         $('.nav-item-title').matchHeight();
@@ -409,5 +411,7 @@ $(document).ready(function() {
      * end PARALLAX
      */
 
+
+    $('.preloader').fadeOut();
 
 });
