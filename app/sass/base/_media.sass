@@ -33,6 +33,14 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .key-tabs-controls
+    li
+      a
+        padding: 15px 15px 25px
+
+  .key-control-desc
+    font-size: 16px
+
   .s-director
     margin-top: 150px
 
@@ -77,6 +85,29 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .key-tabs-controls
+    position: relative
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &.top
+      top: 75px
+    &.bottom
+      bottom: 75px
+    li
+      width: 30%
+      a
+        margin-bottom: 0
+
+
+  .key-item
+    top: 0
+    padding: 110px 45px
+    &:before
+      display: none
+    &:after
+      display: none
 
   .s-director
     margin-top: 80px
@@ -173,6 +204,34 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .key-tabs-container
+    margin-top: 20px
+
+  .key-item
+    &:before
+      display: block
+      width: 15px
+      left: -15px
+    &:after
+      display: block
+      width: 15px
+      right: -15px
+
+  .key-tabs-controls
+    li
+      a
+        padding: 25px 30px
+        display: flex
+        justify-content: center
+        align-items: center
+    &.top
+      top: 50px
+    &.bottom
+      bottom: 50px
+
+  .key-control-desc
+    display: none
+
   .s-projects
     p
       padding-left: 0
@@ -235,6 +294,24 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .key-tabs-controls
+    .svg
+      max-height: 40px
+
+  .key-item
+    padding-left: 15px
+    padding-right: 15px
+    &-title
+      font-size: 16px
+    &:before
+      display: block
+      width: 10px
+      left: -10px
+    &:after
+      display: block
+      width: 10px
+      right: -10px
 
   .s-director
     .btn-red

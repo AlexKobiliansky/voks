@@ -1,0 +1,80 @@
+.s-key
+  margin-top: 80px
+  margin-bottom: 165px
+
+.key-tabs-container
+  margin-top: 80px
+
+.key-tabs-controls
+  position: relative
+  z-index: 2
+  .svg
+    max-height: 60px
+    width: auto
+    fill: $accent
+    +mt(.3s)
+  li
+    a
+      display: block
+      margin-bottom: 30px
+      box-shadow: 8px 8px 25px 5px rgba(0,0,0,.2)
+      padding: 20px 20px 20px 35px
+      background-color: #fff
+      +mt(.3s)
+      &:hover
+        background-color: $accent
+        color: #fff
+        .svg
+          fill: #fff
+    &.active
+      a
+        background-color: $accent
+        color: #fff
+        .svg
+          fill: #fff
+
+
+.key-control-desc
+  display: block
+  margin-top: 8px
+  font-size: 20px
+  font-weight: 700
+  line-height: 1.2
+
+.key-item
+  display: none
+  background-color: #f0f0f0
+  position: relative
+  top: 35px
+  padding: 60px 45px
+  min-height: 550px
+  &:before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 262px
+    left: -262px
+    background-color: #f0f0f0
+    top: 0
+  &:after
+    content: ''
+    position: absolute
+    height: 100%
+    width: 262px
+    right: -262px
+    background-color: #f0f0f0
+    top: 0
+  .svg
+    margin-bottom: 10px
+    height: 60px
+  &-title
+    font-size: 20px
+    font-weight: 800
+    margin-bottom: 8px
+    text-transform: uppercase
+  p
+    margin-bottom: 8px
+    line-height: 1.2
+
+  &.active
+    display: block
