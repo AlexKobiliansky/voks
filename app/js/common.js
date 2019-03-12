@@ -47,6 +47,7 @@ $(document).ready(function() {
      * end mobile-mnu customization
      */
 
+    $(".main-mnu a").mPageScroll2id();
 
     $('img.svg').each(function(){
         var $img = jQuery(this);
@@ -82,7 +83,6 @@ $(document).ready(function() {
 
 
     $( ".any-content" ).tabs();
-    // $( ".key-tabs-container" ).tabs();
 
     $('.key-tabs-container').each(function(){                             // Находим список вкладок
         var $this = $(this);                                      // Сохраняем этот список
@@ -233,6 +233,21 @@ $(document).ready(function() {
 
     heightses();
 
+
+    $(function() {
+        $("a[href='#popup-form']").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
+
     /**
      * FORMS
      */
@@ -253,13 +268,19 @@ $(document).ready(function() {
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
+        var t = th.find(".btn").text();
+        th.find(".btn").prop("disabled", "disabled").addClass("disabled").text("Отправлено!");
 
         $.ajax({
             type: "POST",
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
-
+            setTimeout(function() {
+                th.find(".btn").removeAttr('disabled').removeClass("disabled").text(t);
+                th.trigger("reset");
+                $.magnificPopup.close();
+            }, 2000);
         });
         return false;
     });
@@ -410,6 +431,8 @@ $(document).ready(function() {
     /**
      * end PARALLAX
      */
+
+
 
 
     $('.preloader').fadeOut();

@@ -50,6 +50,8 @@ gulp.task('scripts', function() {
 		'app/libs/photoswipe/photoswipe.min.js',
 		'app/libs/photoswipe/photoswipe-ui-default.min.js',
 		'app/libs/photoswipe/jquery.photoswipe.js',
+		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
+		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
