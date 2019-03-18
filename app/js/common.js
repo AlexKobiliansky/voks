@@ -84,6 +84,9 @@ $(document).ready(function() {
 
     $( ".any-content" ).tabs();
 
+    $('.key-tabs-controls.top li:first-child').addClass('active');
+    $('.key-item:first-child').addClass('active');
+
     $('.key-tabs-container').each(function(){                             // Находим список вкладок
         var $this = $(this);                                      // Сохраняем этот список
         var $tab = $this.find('li.active');                       // Получаем активный элемент списка
@@ -273,7 +276,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             setTimeout(function() {
@@ -432,9 +435,14 @@ $(document).ready(function() {
      * end PARALLAX
      */
 
-
-
-
     $('.preloader').fadeOut();
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 30) {
+            $('.main-head').addClass('sticky')
+        } else {
+            $('.main-head').removeClass('sticky')
+        }
+    });
 
 });

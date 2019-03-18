@@ -1,5 +1,12 @@
 .main-head
   padding: 22px 0 28px
+  +mt(.3s)
+  position: fixed
+  width: 100%
+  z-index: 9999
+  top: 0
+  background-color: transparent
+
   .btn
     float: right
     margin-left: 40px
@@ -13,6 +20,9 @@
       color: $accent
   .logo
     margin-right: 65px
+  &.sticky
+    padding: 3px 0
+    background-color: #fff
 
 .main-mnu
   display: inline-block
